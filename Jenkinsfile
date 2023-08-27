@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Check for Changes') {
             when {
-                expression { return env.BRANCH_NAME == 'feature' || env.BRANCH_NAME == 'third' }
+                expression { return env.BRANCH_NAME == 'feature' || env.BRANCH_NAME == 'master' || env.BRANCH_NAME == 'third' }
             }
             steps {
                 script {
