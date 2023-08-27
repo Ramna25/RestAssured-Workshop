@@ -18,9 +18,9 @@ pipeline {
                     }
 
                     if (hasChanges) {
-                        echo "Changes was detected in ${env.BRANCH_NAME}"
+                        echo "Changes in ${env.BRANCH_NAME}"
                     } else {
-                        echo "No changes was detected in ${env.BRANCH_NAME}"
+                        echo "No changes in ${env.BRANCH_NAME}"
                     }
                 }
             }
